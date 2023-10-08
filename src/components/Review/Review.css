@@ -1,0 +1,80 @@
+.review .review-slider {
+    padding: 1rem;
+  }
+  
+  .review .review-slider .box {
+    background: #fff;
+    border-radius: 0.5rem;
+    text-align: center;
+    padding: 3rem 2rem;
+    outline-offset: -1rem;
+    outline: var(--outline);
+    box-shadow: var(--box-shadow);
+    transition: 0.2s linear;
+  }
+  
+  .review .review-slider .box:hover {
+    outline: var(--outline-hover);
+    outline-offset: 0rem;
+  }
+  
+  .review .review-slider .box .review-image {
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+  }
+  
+  .review .review-slider .box p {
+    padding: 1rem 0;
+    line-height: 1.8;
+    color: var(--light-color);
+    font-size: 1.5rem;
+  }
+  
+  .review .review-slider .box h3 {
+    padding-bottom: 0.5rem;
+    color: var(--orange);
+    font-size: 2.2rem;
+  }
+  
+  /* .review .review-slider .box .stars {
+    color: var(--orange);
+  } */
+  
+  .review .review-slider .box .stars .fa-star,
+  .review .review-slider .box .stars .fa-star-half-alt {
+    font-size: 1.7rem;
+    color: var(--orange);
+  }
+  .stars{
+    color: orange;
+  }
+
+  .review .review-slider .box {
+    background: #fff;
+    border-radius: 0.5rem;
+    text-align: center;
+    padding: 1.5rem 1rem; /* Adjust padding to make the box smaller */
+    outline-offset: -1rem;
+    outline: var(--outline);
+    box-shadow: var(--box-shadow);
+    transition: 0.2s linear;
+  }
+  
+  .review .review-slider .box p {
+    padding: 1rem 0;
+    line-height: 1.4; /* Reduce line height for smaller text */
+    color: var(--light-color);
+    font-size: 1.2rem; /* Reduce font size for the paragraphs */
+  }
+  
+  .review .review-slider .box h3 {
+    padding-bottom: 0.5rem;
+    color: var(--orange);
+    font-size: 1.8rem; /* Reduce font size for the headings */
+  }
+  
+  .review .review-slider .box .stars .fa-star,
+  .review .review-slider .box .stars .fa-star-half-alt {
+    font-size: 1.5rem; /* Reduce font size for the stars */
+  }

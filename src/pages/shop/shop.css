@@ -1,0 +1,158 @@
+.shopTitle {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 40px;
+    font-family: fantasy;
+    text-shadow: 3px 3px 2px orange;
+    color: darkmagenta;
+   
+   
+  
+   
+
+  }
+  .shop{
+    background-color: (to right ,bisque,#f3f3f3);
+  }
+  .products {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    background-color: (to right ,bisque,#f3f3f3);
+    
+  }
+  
+  .product {
+    border-radius: 15px;
+    width: 300px;
+    height: 350px;
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .product img {
+    width: 400px;
+  }
+  
+  .product .description {
+    text-align: center;
+  }
+  
+  .product:hover {
+    transition: 0.3s ease-in;
+    cursor: pointer;
+  }
+  
+  .addToCartBttn {
+    background-color: transparent;
+    border: 2px solid rgb(19, 19, 19);
+    min-width: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+  }
+  
+  .addToCartBttn:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+  .categoryFilter {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #333; /* Text color */
+  }
+  
+  .categoryFilter {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Style the custom select container */
+  .custom-select {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+  }
+  
+  /* Style the select input */
+  .custom-select select {
+    width: 100%;
+    padding: 8px 30px 8px 12px; /* Add left padding for the text "Categories" */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 4px;
+    background-color: #f9f9f9; /* Background color */
+    color: #333; /* Text color */
+    font-size: 16px;
+    cursor: pointer;
+    appearance: none;
+  }
+  
+  /* Style the dropdown arrow (for most browsers) */
+  .custom-select .select-arrow {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    cursor: pointer; /* Add pointer cursor to the arrow */
+  }
+  
+  /* Style the dropdown options container */
+  .custom-select .options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 0; /* Initially hide the options */
+    overflow: hidden; /* Hide overflowing options */
+    background-color: #fff; /* Dropdown background color */
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Dropdown shadow */
+    transition: max-height 0.3s ease-in-out; /* Smooth expand/collapse animation */
+    z-index: 1; /* Ensure it's above other elements */
+  }
+  
+  /* Style the dropdown option */
+  .custom-select .options option {
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  /* Hover style for dropdown options */
+  .custom-select .options option:hover {
+    background-color: #007bff; /* Highlight background color on hover */
+    color: #fff; /* Highlight text color on hover */
+  }
+  
+  /* Show the options when the select input is focused */
+  .custom-select select:focus + .options {
+    max-height: 200px; /* Adjust the max-height as needed */
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+  }
+
+  @media (max-width: 768px) {
+    .products {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .product {
+        margin: 20px;
+    }
+}

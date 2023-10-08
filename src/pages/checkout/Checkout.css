@@ -1,0 +1,38 @@
+.checkout-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f8f8; /* Background color for the page */
+  }
+  
+  .checkout-content {
+    text-align: center;
+    background-color: #fff; /* Background color for the content area */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .checkout-heading {
+    font-size: 24px;
+    color: #333; /* Heading text color */
+    margin-bottom: 10px;
+  }
+  
+  .checkout-message {
+    font-size: 18px;
+    color: #555; /* Message text color */
+    margin-bottom: 20px;
+  }
+  
+  .checkout-visit-again {
+    font-size: 16px;
+    color: #777; /* Visit again message text color */
+  }
+  .checkout-qr-code {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Adjust as needed */
+  }

@@ -1,0 +1,146 @@
+.navbar{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1000;
+    
+    width: 100%;
+    height: 80px;
+    background-color: #222f3d;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+.links{
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+}
+.links a{
+    text-decoration: none;
+    color: bisque;
+    margin-left: 20px;
+    font-size: 25px;
+   
+}
+.shopping{
+    position: relative;
+    right: 1008px;
+    color: bisque;
+    
+}
+.zone{
+    position: relative;
+    right: 1009px;
+   
+    font-weight: 800;
+    text-shadow: 1px 1px 1px orange;
+    color:bisque;
+}
+.cart-counter {
+    position: absolute;
+    top: 1;
+    right: 40px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    border-radius: 50%;
+    padding: 1px 6px;
+  }
+  .categoryFilter {
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    right: 610px;
+    bottom: 145px;
+  }
+  
+  /* Style the custom select container */
+  .custom-select {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+  }
+  
+  /* Style the select input */
+  .custom-select select {
+    width: 100%;
+    padding: 8px 30px 8px 12px; /* Add left padding for the text "Categories" */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 5px;
+    background-color: #f9f9f9; /* Background color */
+    color: #333; /* Text color */
+    font-size: 16px;
+    cursor: pointer;
+    appearance: none;
+    outline: none;
+    
+  }
+  
+  /* Style the dropdown arrow (for most browsers) */
+  .custom-select .select-arrow {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    cursor: pointer; /* Add pointer cursor to the arrow */
+  }
+  
+  /* Style the dropdown options container */
+  .custom-select .options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 0; /* Initially hide the options */
+    overflow: hidden; /* Hide overflowing options */
+    background-color: #fff; /* Dropdown background color */
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Dropdown shadow */
+    transition: max-height 0.3s ease-in-out; /* Smooth expand/collapse animation */
+    z-index: 1; /* Ensure it's above other elements */
+  }
+  
+  /* Style the dropdown option */
+  .custom-select .options option {
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  /* Hover style for dropdown options */
+  .custom-select .options option:hover {
+    background-color: #007bff; /* Highlight background color on hover */
+    color: #fff; /* Highlight text color on hover */
+  }
+  
+  /* Show the options when the select input is focused */
+  .custom-select select:focus + .options {
+    max-height: 200px; /* Adjust the max-height as needed */
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+  }
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .links {
+        margin: 20px 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .shopping, .zone {
+        position: static;
+        margin: 10px 0;
+        text-align: center;
+    }
+}
